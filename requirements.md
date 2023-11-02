@@ -31,6 +31,6 @@
 
 ## Замечания:
 Необходимо уточнить у заказчика логику использования поля production.orders.bonus_payment.
-Как связаны между собой production.orders.bonus_payment и production.orders.payment, а так же фактор monetary value
+Как связаны между собой production.orders.bonus_payment и production.orders.payment, а так же фактор monetary value ?
 
 
