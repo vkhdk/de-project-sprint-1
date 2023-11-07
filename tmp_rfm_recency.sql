@@ -1,5 +1,5 @@
 -- query for test
-"""
+/*
 WITH sub_t AS
   (SELECT u.id,
           min(o.order_ts) AS last_order_dt
@@ -23,7 +23,7 @@ WITH sub_t AS
 SELECT count(*)
 FROM recency_sub_t_fill_nulls
 GROUP BY recency;
-"""
+*/
 -- query for recency metric
 INSERT INTO analysis.tmp_rfm_recency (user_id, recency) WITH sub_t AS
   (SELECT u.id,

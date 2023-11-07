@@ -1,5 +1,5 @@
 -- query for test
-"""
+/*
 WITH sub_t AS
   (SELECT u.id,
           count(o.order_id) AS order_count
@@ -23,7 +23,7 @@ WITH sub_t AS
 SELECT count(*)
 FROM frequency_sub_t_fill_nulls
 GROUP BY frequency;
-"""
+*/
 -- query for frequency metric
 INSERT INTO analysis.tmp_rfm_frequency (user_id, frequency) WITH sub_t AS
   (SELECT u.id,

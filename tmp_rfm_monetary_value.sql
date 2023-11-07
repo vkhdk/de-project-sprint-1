@@ -1,5 +1,5 @@
 -- query for test
-"""
+/*
 WITH sub_t AS
   (SELECT u.id,
           sum(o.payment) AS order_sum
@@ -23,7 +23,7 @@ WITH sub_t AS
 SELECT count(*)
 FROM monetary_value_sub_t_fill_nulls
 GROUP BY monetary_value;
-"""
+*/
 -- query for monetary_value metric
 INSERT INTO analysis.tmp_rfm_monetary_value (user_id, monetary_value) WITH sub_t AS
   (SELECT u.id,
