@@ -20,14 +20,17 @@
 Для расчета фактора recency необходимы поля:
 - production.orders.order_ts
 - production.orders.user_id
+- production.users.id
 
 Для расчета фактора frequency необходимы поля:
 - production.orders.order_id
 - production.orders.user_id
+- production.users.id
 
 Для расчета фактора monetary value необходимы поля:
 - production.orders.payment
 - production.orders.user_id
+- production.users.id
 
 ## Замечания:
 Необходимо уточнить у заказчика логику использования поля production.orders.bonus_payment.
