@@ -39,7 +39,7 @@ INSERT INTO analysis.tmp_rfm_recency (user_id, recency) WITH sub_t_cl_ord_2022 A
      AND o.order_ts < '2023-01-01' ),
                                                              sub_t_cl_ord_2022_agg AS
   (SELECT u.id,
-          min(cl_o_22.order_ts) AS last_order_dt
+          max(cl_o_22.order_ts) AS last_order_dt
    FROM analysis.users u
    LEFT JOIN sub_t_cl_ord_2022 cl_o_22 ON u.id = cl_o_22.user_id
    GROUP BY u.id),
